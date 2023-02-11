@@ -64,6 +64,7 @@
         let cardBody = document.createElement("div");
         cardBody.setAttribute("class", "card-body");
 
+        //create card title
         let postTitle = document.createElement("h4");
         postTitle.setAttribute("class", "card-title");
         postTitle.setAttribute("class", "text-center");
@@ -71,11 +72,13 @@
 
         cardBody.appendChild(postTitle);
 
+        //create card body
         let postBody = document.createElement("p");
         postBody.setAttribute("class", "card-body");
         postBody.innerHTML = response.body;
-        
         cardBody.appendChild(postBody);
+
+        //append card body to card div
         card.appendChild(cardBody);
 
         const hr = document.createElement("hr");
